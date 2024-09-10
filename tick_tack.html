@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="choice">
+            <button id="playAI">Play with AI</button>
+            <button id="playOpponent">Play with Opponent</button>
+        </div>
+        <div id="game-board" class="hidden">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="status" class="hidden"></div>
+        <button id="restart" class="hidden">Restart Game</button> <!-- Added restart button -->
+        <button id="back" class="hidden">Back to Menu</button>
+
+        <div id="scoreboard" class="hidden">
+            <div id="ai-scoreboard">
+                <p>Player: <span id="player-score">0</span></p>
+                <p>AI: <span id="ai-score">0</span></p>
+            </div>
+            <div id="opponent-scoreboard" class="hidden">
+                <p>Player 1: <span id="player1-score">0</span></p>
+                <p>Player 2: <span id="player2-score">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
